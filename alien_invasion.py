@@ -3,7 +3,7 @@ import sys
 
 from settings import Settings
 from ship import Ship
-
+import game_funcions as gf
 
 def run_game():
     pygame.init()
@@ -16,11 +16,11 @@ def run_game():
 
     bg_color = ai_settings.bg_color
     while True:
+        gf.check_events()
         for event in pygame.event.get():
             screen.fill(bg_color)
             ship.blitme()
-            if event.type == pygame.QUIT:
-                sys.exit()
+
 
         pygame.display.flip()
 

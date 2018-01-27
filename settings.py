@@ -1,6 +1,6 @@
 class Settings():
     """Класс для хранения настоек игры"""
-    def  __init__(self):
+    def __init__(self):
 
         self.screen_width = 1000
         self.screen_hight = 600
